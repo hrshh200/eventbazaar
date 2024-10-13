@@ -12,6 +12,7 @@ const Navbar = () => {
                     Events and Weddings
                 </span>
             </div>
+            <img className='ImageDisplay' src='Image1.png'/>
             <div className='displayList'>
                 <ul>
                     <li>Home</li>

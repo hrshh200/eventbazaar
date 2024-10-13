@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFF7EA;
+    box-shadow: 4px 0px 19px 0px #00000040;
+
+}
+
+.logoDisplay {
+    width: 120px;
+    height: 120px;
+}
+
+.headingDisplay {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+.headingTitleWed {
+    font-family: 'Alex Brush';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 37.5px;
+    text-align: left;
+    color: #A2783A;
+    display: flex;
+    align-items: center;
+}
+
+.displayList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.displayList ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style-type: none;
+}
+
+.displayList li {
+    font-family: Nunito Sans;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34.1px;
+    text-align: left;
+    color: #A2783A;
+    cursor: pointer;
+}
+
+.detailsList {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap:1em;
+}
+
+.detailsList span {
+    font-family: Cormorant Garamond;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 29.06px;
+    text-align: center;
+    color: #000000;
+}

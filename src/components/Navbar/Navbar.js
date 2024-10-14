@@ -12,7 +12,7 @@ const Navbar = () => {
                     Events and Weddings
                 </span>
             </div>
-            <img className='ImageDisplay' src='Image1.png'/>
+            {/* <img className='ImageDisplay' src='Image1.png'/> */}
             <div className='displayList'>
                 <ul>
                     <li>Home</li>
@@ -23,7 +23,7 @@ const Navbar = () => {
                 </ul>
                 <div className='detailsList'>
                     <span>+91 88866668888</span>
-                    <span>info@kingsevents.com</span>
+                    <span>info@eventbazaar.com</span>
                 </div>
             </div>
         </div>

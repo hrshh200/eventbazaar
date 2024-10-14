@@ -1,0 +1,13 @@
+.containerFooter{
+    background-color: black;
+    color: white;
+}
+
+.FooterHeading{
+    display: flex;
+    flex-direction: column;
+    gap:0.5em;
+    justify-content: center;
+    align-items: center;
+}
+

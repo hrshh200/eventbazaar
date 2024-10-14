@@ -59,6 +59,11 @@
     cursor: pointer;
 }
 
+.displayList li:hover{
+    color: #916c34;
+    transform: scale(1.1);
+}
+
 .detailsList {
     display: flex;
     flex-direction: row;

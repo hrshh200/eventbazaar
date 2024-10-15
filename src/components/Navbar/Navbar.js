@@ -16,9 +16,9 @@ const Navbar = () => {
             <div className='displayList'>
                 <ul>
                     <li>Home</li>
+                    <li>Login</li>
                     <li>Sevices</li>
                     <li>About</li>
-                    <li>Blog</li>
                     <li>Contact</li>
                 </ul>
                 <div className='detailsList'>

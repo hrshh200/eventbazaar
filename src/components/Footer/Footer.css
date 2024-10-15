@@ -1,13 +1,68 @@
-.containerFooter{
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+.containerFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
     background-color: black;
     color: white;
 }
 
-.FooterHeading{
+.FooterHeading {
     display: flex;
     flex-direction: column;
-    gap:0.5em;
     justify-content: center;
     align-items: center;
 }
 
+.FooterHeading h1 {
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: left;
+    color: #FFFFFF;
+    margin-top: 1em;
+    margin-bottom: 0.25em;
+}
+
+.FooterHeading span {
+    font-family: 'Alex Brush';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+    color: #A2783A;
+}
+
+.newsLetter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.newsLetter h1 {
+    font-family: Cormorant Garamond;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 36.33px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.innerNews{
+    display: flex;
+    flex-direction: row;
+    gap:0.5em;
+}
+
+.inputnews{
+    width: 460px;
+height: 45px;
+top: 3018px;
+left: 566px;
+border-radius: 10px 0px 0px 0px;
+border: 1px 0px 0px 0px;
+
+}

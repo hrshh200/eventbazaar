@@ -3,7 +3,7 @@ import "./Home.css";
 
 const Home = () => {
     return (
-        <div className='container'>
+        <div className='containerHome'>
             <img
                 className='imageDisplay'    
                 src='Background.jpeg'
@@ -20,6 +20,9 @@ const Home = () => {
             <div className='overlayImage2'>
                <span>Search Event by name</span>
             </div>
+            {/* <div className='services'>
+                <h1>OUR SERVICES</h1>
+            </div> */}
         </div>
     )
 }

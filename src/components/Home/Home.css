@@ -31,7 +31,7 @@
     flex-direction: column;
 }
 
-.overlayImage{
+.overlayImage {
     position: absolute;
     top: 65%;
     left: 20%;
@@ -39,15 +39,15 @@
     padding: 10px;
     display: flex;
     flex-direction: row;
-    gap:1em;
+    gap: 1em;
 }
 
-.ImagePos{
+.ImagePos {
     width: 50%;
     height: 50%;
 }
 
-.overlayImage2{
+.overlayImage2 {
     position: absolute;
     top: 85%;
     left: 60%;
@@ -98,7 +98,18 @@
     cursor: pointer;
 }
 
-.services{
+.items {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemsimg {
+    width: 236px;
+    height: 236px;
+    top: 902px;
+    left: 500px;
+    gap: 0px;
+    opacity: 0px;
+
 }

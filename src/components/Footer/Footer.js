@@ -12,15 +12,18 @@ const Footer = () => {
                     Events and Weddings
                 </span>
             </div>
-            {/* <div className='newsLetter'>
-                <h1>
-                   News Letter 
-                </h1>
-                <div className='innerNews'>
-                    <input className='inputnews'/>
-                    <button></button>
-                </div>
-            </div> */}
+            <div class="login-bar">
+                <h1>NEWS LETTER</h1>
+                <form action="#" method="post">
+                    <div className='content'>
+                        <input type="text" placeholder="Enter your E-mail" required />
+                        <button type="submit">Sign in</button>
+                    </div>
+                    <span>Sign up with your e-mail address to get the latest news & updates .</span>
+                </form>
+
+            </div>
+
         </div>
     )
 }

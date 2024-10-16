@@ -3,6 +3,8 @@
 .containerFooter {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 3em;
     background-color: black;
     color: white;
@@ -34,35 +36,61 @@
     color: #A2783A;
 }
 
-.newsLetter {
+
+.login-bar .content{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
 }
 
-.newsLetter h1 {
-    font-family: Cormorant Garamond;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 36.33px;
-    text-align: left;
-    color: #FFFFFF;
+.login-bar {
+
+    width: 617px;
+    height: 142px;
+    top: 2967px;
+    left: 566px;
+    gap: 0px;
+    border-radius: 10px 0px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+    justify-content: center; 
+    align-items: center;
+
 }
 
-.innerNews{
-    display: flex;
-    flex-direction: row;
-    gap:0.5em;
+
+
+.login-bar input[type="text"] {
+
+    width: 100%;
+
+    padding: 10px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+    margin-right : 7px ;
+
 }
 
-.inputnews{
-    width: 460px;
-height: 45px;
-top: 3018px;
-left: 566px;
-border-radius: 10px 0px 0px 0px;
-border: 1px 0px 0px 0px;
 
+
+.login-bar button {
+
+    background-color: blue;
+
+    color: white;
+
+    padding: 2px 15px;
+
+    border: 1px solid black;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    width: 100px;
+
+    height: 40px;
 }

@@ -37,7 +37,7 @@
 }
 
 
-.login-bar .content{
+.login-bar .content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,14 +47,10 @@
 
     width: 617px;
     height: 142px;
-    top: 2967px;
-    left: 566px;
-    gap: 0px;
     border-radius: 10px 0px 0px 0px;
     border: 1px 0px 0px 0px;
-    opacity: 0px;
-    
-    justify-content: center; 
+    margin-bottom: 2em;
+    justify-content: center;
     align-items: center;
 
 }
@@ -62,35 +58,46 @@
 
 
 .login-bar input[type="text"] {
-
     width: 100%;
-
     padding: 10px;
-
     border: 1px solid #ccc;
-
     border-radius: 5px;
-    margin-right : 7px ;
+    margin-right: 7px;
 
 }
 
 
 
 .login-bar button {
-
     background-color: blue;
-
     color: white;
-
     padding: 2px 15px;
-
     border: 1px solid black;
-
     border-radius: 5px;
-
     cursor: pointer;
-
     width: 100px;
-
     height: 40px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.detailsFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.detailsFooter span {
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32.74px;
+    text-align: left;
+    color: #FFFFFF;
 }

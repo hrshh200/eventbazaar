@@ -23,7 +23,39 @@ const Home = () => {
             {/* <div className='services'>
                 <h1>OUR SERVICES</h1>
             </div> */}
+            <div className='Services'>
+                <span>Events and Planners</span>
+                <h1>OUR SERVICES</h1>
+                <div className="imageService">
+                    <div className="imageContainer">
+                        <img className="Serviceimg" src="Service1.jpeg" />
+                        <div className="overlays">
+                            <h2>Marriage Events</h2>
+                            <p>Description for Service 1</p>
+                            <button>See More!</button>
+                        </div>
+                    </div>
 
+                    <div className="imageContainer">
+                        <img className="Serviceimg" src="Service2.jpeg" />
+                        <div className="overlays">
+                            <h2>Birthday Events</h2>
+                            <p>Description for Service 2</p>
+                            <button>See More!</button>
+                        </div>
+                    </div>
+
+                    <div className="imageContainer">
+                        <img className="Serviceimg" src="Servcie3.jpeg" />
+                        <div className="overlays">
+                            <h2>Anniversary Events</h2>
+                            <p>Description for Service 3</p>
+                            <button>See Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <div className='items'>
                 <img
                     className='itemsimg'

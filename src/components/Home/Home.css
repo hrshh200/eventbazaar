@@ -100,7 +100,8 @@
 
 .items {
     margin: 1em;
-    margin-top: 12em;
+    margin-top: 22em;
+    margin-bottom: 10em;
     display: flex;
     flex-direction: row;
     justify-content: center;

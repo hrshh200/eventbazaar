@@ -17,16 +17,16 @@ const Home = () => {
                 <span className='paraMaker'>We believe that it is all about the BIG DREAMS and the small details!</span>
                 <button className='buttonDisplay'>Book Now!</button>
             </div>
-            <div className='overlayImage2'>
+            {/* <div className='overlayImage2'>
                 <span>Search Event by name</span>
-            </div>
+            </div> */}
             {/* <div className='services'>
                 <h1>OUR SERVICES</h1>
             </div> */}
             <div className='Services'>
                 <span>Events and Planners</span>
                 <h1>OUR SERVICES</h1>
-                <div className="imageService">
+                {/* <div className="imageService">
                     <div className="imageContainer">
                         <img className="Serviceimg" src="Service1.jpeg" />
                         <div className="overlays">
@@ -48,12 +48,12 @@ const Home = () => {
                     <div className="imageContainer">
                         <img className="Serviceimg" src="Servcie3.jpeg" />
                         <div className="overlays">
-                            <h2>Anniversary Events</h2>
+                            <h2>Anniversary Events</h2> 
                             <p>Description for Service 3</p>
                             <button>See Now!</button>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
             <div className='items'>

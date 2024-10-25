@@ -17,6 +17,7 @@ const Navbar = () => {
                 <ul>
                     <li>Home</li>
                     <li>Login</li>
+                    <li>Sign Up</li>
                     <li>Sevices</li>
                     <li>About</li>
                     <li>Contact</li>

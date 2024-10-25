@@ -26,7 +26,7 @@ const Home = () => {
             <div className='Services'>
                 <span>Events and Planners</span>
                 <h1>OUR SERVICES</h1>
-                {/* <div className="imageService">
+                <div className="imageService">
                     <div className="imageContainer">
                         <img className="Serviceimg" src="Service1.jpeg" />
                         <div className="overlays">
@@ -53,7 +53,7 @@ const Home = () => {
                             <button>See Now!</button>
                         </div>
                     </div>
-                </div> */}
+                </div>
 
             </div>
             <div className='items'>

@@ -8,24 +8,18 @@ const Navbar = () => {
                 <img
                     className='logoDisplay'
                     src='Logo.png' />
-                <span className='headingTitleWed'>
-                    Events and Weddings
-                </span>
             </div>
             {/* <img className='ImageDisplay' src='Image1.png'/> */}
             <div className='displayList'>
                 <ul>
-                    <li>Home</li>
-                    <li>Login</li>
-                    <li>Sign Up</li>
-                    <li>Sevices</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li>HOME</li>
+                    <li>PAGES</li>
+                    <li>PORTFOLIO</li>
+                    <li>FEATURES</li>
+                    <li>BLOG</li>
+                    <li>SHOP</li>
+                    <li>RSVP</li>
                 </ul>
-                <div className='detailsList'>
-                    <span>+91 88866668888</span>
-                    <span>info@eventbazaar.com</span>
-                </div>
             </div>
         </div>
     )

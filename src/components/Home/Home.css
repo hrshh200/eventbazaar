@@ -1,227 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
 
 .containerHome {
-    background-color: #FFF7EA;
-    display: flex;
-    flex-direction: column;
+  background-color: #FFF7EA;
+  display: flex;
+  flex-direction: column;
 }
 
 .imageDisplay {
-    background-size: cover;
-    /* Ensures the image covers the entire width */
-    background-position: center;
-    /* Centers the image */
-    width: 100%;
-    height: 600px;
-    background-repeat: no-repeat;
-    opacity: 0.7;
-    object-fit: cover;
+  background-size: cover;
+  /* Ensures the image covers the entire width */
+  background-position: center;
+  /* Centers the image */
+  width: 100%;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  object-fit: cover;
 }
 
 .overlay {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-    transform: translate(-50%, -50%);
-    background-color: #ffffff;
-    padding: 10px;
-    color: black;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.overlayTitle {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, 20%); /* Start below the intended position */
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  
+  /* Animation properties */
+  opacity: 0; /* Start invisible */
+  animation: slideUp 0.7s ease-in-out 2s forwards; /* 0.5s duration, 2s delay */
 }
 
-.overlayImage {
-    position: absolute;
-    top: 65%;
-    left: 20%;
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 20%);
+  }
+  100% {
+    opacity: 1;
     transform: translate(-50%, -50%);
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
+  }
+}
+.overlayTitle span {
+  font-family: 'Alex Brush';
+  font-size: 100px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.overlayTitle h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.overlayAdjust {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6em;
 }
 
 .ImagePos {
-    width: 50%;
-    height: 50%;
+  width: 50%;
+  height: 50%;
 }
 
-.overlayImage2 {
-    position: absolute;
-    top: 85%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 10px;
-    color: #A2783A;
-    text-align: center;
-    display: flex;
-    border-radius: 5px;
-    flex-direction: row;
+.overlayTitle .overlayAdjust button {
+  background: linear-gradient(135deg, red, orange);
+  color: white;
+  width: 20%;
+  border: none;
+  padding: 10px 17px;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  margin-top: 2em;
+  margin-left: 17em;
 }
 
-.dreamMaker {
-    font-family: 'Alex Brush';
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 42.39px;
-    text-align: left;
-    color: #A2783A;
+.overlayTitle .overlayAdjust button:hover {
+  background: linear-gradient(135deg, #d4af65, #a2783a);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }
 
-.titleMaker {
-    font-family: Cormorant Garamond;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 42.39px;
-    text-align: left;
-    color: black;
+.overlayTitle .overlayAdjust button:focus {
+  outline: none;
+  box-shadow: 0px 0px 0px 4px rgba(212, 175, 101, 0.3);
 }
 
-.paraMaker {
-    font-family: Cormorant Garamond;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 29.06px;
-    text-align: left;
-    color: black;
-}
-
-.buttonDisplay {
-    background-color: black;
-    color: #ffffff;
-    display: flex;
-    width: 20%;
-    padding: 0.5em;
-    margin-top: 1em;
-    cursor: pointer;
-}
-
-.items {
-    margin: 1em;
-    margin-top: 22em;
-    margin-bottom: 10em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.itemsimg {
-    width: 236px;
-    height: 236px;
-}
-
-.Services {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-left: 7em;
-    margin-top: 4em;
-    margin-right: 2em;
-    margin-bottom: 2em;
-}
-
-.Services span {
-    font-family: Alex Brush;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 43.75px;
-    text-align: left;
-    color: #A2783A;
-
-}
-
-.Services h1 {
-    font-family: Nunito Sans;
-    font-size: 35px;
-    font-weight: 400;
-    line-height: 68.2px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: black;
-    margin:0;
-}
-
-.imageService {
-    display: flex;
-    gap: 1em;
-  }
-  
-  .imageContainer {
-    position: relative;
-    width: 400px; /* Adjust size accordingly */
-    height: 200px; /* Adjust size accordingly */
-    cursor: pointer;
-  }
-  
-  .Serviceimg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-  }
-
-  
-  .imageContainer:hover .Serviceimg {
-    opacity: 0.3; /* Make image transparent on hover */
-  }
-  
-  .overlays{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .imageContainer:hover .overlays {
-    opacity: 1; /* Show overlay text on hover */
-  }
-  
-  .overlays h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .overlays p {
-    font-size: 16px;
-    margin-bottom: 20px;
-  }
-  
-  .overlays button {
-    background-color: #A2783A;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .overlays button:hover {
-    background-color: #865F2A; /* Darken button on hover */
-  }
-  
-
-.imageService{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.Serviceimg{
-    width: 400px;
-    height: 400px;
-}

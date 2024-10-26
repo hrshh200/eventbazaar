@@ -49,6 +49,11 @@
     list-style-type: none;
 }
 
+.displayList ul button{
+    border: none;
+    background: none;
+}
+
 .displayList li {
     font-size: 14px;
     font-weight: 700;

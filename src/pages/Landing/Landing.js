@@ -7,7 +7,6 @@ import Slidesbar from '../../components/Home/Slides';
 const Landing = () =>{
   return (
     <div>
-         <Navbar />
          <Home />
          {/* <Footer /> */}
     </div>

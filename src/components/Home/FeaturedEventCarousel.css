@@ -1,0 +1,29 @@
+.carousel-container {
+    text-align: center;
+    padding: 1em;
+    margin-left: 6em;
+    margin-right: 6em;
+  }
+  
+  .carousel-container h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .carousel .carousel-card {
+    padding: 1em;
+  }
+  
+  .carousel .carousel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .carousel .legend {
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.5em;
+    text-align: center;
+  }
+  

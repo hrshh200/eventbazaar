@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({scrollToServices,scrollTofeatures}) => {
     return (
         <div className='container'>
             <div className='headingDisplay'>
@@ -13,9 +13,9 @@ const Navbar = () => {
             <div className='displayList'>
                 <ul>
                     <li>HOME</li>
-                    <li>PAGES</li>
-                    <li>PORTFOLIO</li>
-                    <li>FEATURES</li>
+                    <li>LOGIN</li>
+                    <button onClick={scrollToServices}><li>SERVICES</li></button>
+                    <button onClick={scrollTofeatures}><li>FEATURES</li></button>
                     <li>BLOG</li>
                     <li>SHOP</li>
                     <li>RSVP</li>

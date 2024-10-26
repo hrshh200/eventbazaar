@@ -1,106 +1,159 @@
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
-
-.containerHome {
-  background-color: #FFF7EA;
+.events {
   display: flex;
   flex-direction: column;
-}
-
-.imageDisplay {
-  background-size: cover;
-  /* Ensures the image covers the entire width */
-  background-position: center;
-  /* Centers the image */
-  width: 100%;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  object-fit: cover;
-}
-
-.overlay {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background-color: #ffffff;
-  padding: 10px;
-  color: black;
+  gap: 0.5em;
   text-align: center;
-  display: flex;
-  flex-direction: column;
+  margin-top: 6em;
+  margin-bottom: 2em;
 }
-.overlayTitle {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, 20%); /* Start below the intended position */
-  padding: 10px;
+
+.events span {
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Hind', sans-serif;
+  font-size: 60px;
+  line-height: 70px;
+  color: #262626;
+  margin-bottom: 1.25rem;
+}
+
+.events p {
+  margin: 0;
+}
+
+.eventCards {
   display: flex;
   flex-direction: row;
-  gap: 1em;
-  
-  /* Animation properties */
-  opacity: 0; /* Start invisible */
-  animation: slideUp 0.7s ease-in-out 2s forwards; /* 0.5s duration, 2s delay */
+  justify-content: space-between;
+  margin-top: 4em;
+  margin-left: 3em;
+  margin-right: 3em;
+  margin-bottom: 4em;
 }
 
-@keyframes slideUp {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, 20%);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
+.cardsContainer {
+  width: 450px;
+  height: 400px;
+  perspective: 1000px; /* Provides depth to the 3D effect */
+  cursor: pointer;
 }
-.overlayTitle span {
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+.card span {  
   font-family: 'Alex Brush';
-  font-size: 100px;
-  color: #ffffff;
-  font-weight: 500;
+  font-size: 3em;
+  color: #262626; 
+  line-height: 60px;
+  text-align: center;
+  padding: 0;
 }
 
-.overlayTitle h1 {
-  margin: 0;
-  font-size: 24px;
-  color: #ffffff;
+.card img{
+  width: 70px;
+  height: 70px;
 }
 
-.overlayAdjust {
+.card p{
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+
+.cardsContainer:hover .card {
+  transform: rotateY(180deg); /* Flips the card to show the back */
+}
+
+/* Front and Back faces */
+.cardFront, .cardBackSocial, .cardBack, .cardBackCooperate, .cardBackWedding {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  margin-top: 6em;
+  gap:1em;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.ImagePos {
-  width: 50%;
-  height: 50%;
+.cardFront {
+  background: #f6f6f6;
 }
 
-.overlayTitle .overlayAdjust button {
-  background: linear-gradient(135deg, red, orange);
-  color: white;
-  width: 20%;
+.cardBackWedding {
+  background-image: url("https://velikorodnov.com/wordpress/wowed/wp-content/uploads/2019/02/430x448_img2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  transform: rotateY(180deg); /* Positions back face correctly */
+}
+
+.cardBackSocial {
+  background-image: url("https://velikorodnov.com/wordpress/wowed/wp-content/uploads/2019/02/430x448_img3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  transform: rotateY(180deg); /* Positions back face correctly */
+}
+
+.cardBackCooperate {
+  background-image: url("https://velikorodnov.com/wordpress/wowed/wp-content/uploads/2019/02/430x448_img1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  transform: rotateY(180deg); /* Positions back face correctly */
+}
+
+
+.cardBack {
+  background: #FFFFFF;
+  color: #fff;
+  transform: rotateY(180deg); /* Positions back face correctly */
+}
+
+
+/* Additional styling */
+/* .cardFront span, .cardBack h3 {
+  font-family: 'Alex Brush';
+  font-size: 2em;
+  color: #262626;
+  margin: 1em 0;
+} */
+
+.cardBack p {
+  color: #ddd;
+  text-align: center;
+}
+
+.morelink, .cardBack button {
+  color: #f05f79;
+  font-weight: 700;
+  background: none;
   border: none;
-  padding: 10px 17px;
-  font-size: 16px;
-  font-family: 'Nunito Sans', sans-serif;
-  font-weight: 600;
-  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  margin-top: 2em;
-  margin-left: 17em;
+  margin-top: 1em;
 }
 
-.overlayTitle .overlayAdjust button:hover {
-  background: linear-gradient(135deg, #d4af65, #a2783a);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(-2px);
+
+.cardBackCooperate span{
+  color: #FFFFFF;
 }
 
-.overlayTitle .overlayAdjust button:focus {
-  outline: none;
-  box-shadow: 0px 0px 0px 4px rgba(212, 175, 101, 0.3);
+.cardBackSocial span{
+  color: #FFFFFF;
 }
 
+.cardBackWedding span{
+  color: #FFFFFF;
+}

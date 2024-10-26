@@ -1,0 +1,60 @@
+/* Style for each carousel image and overlay */
+.carousel .slide img {
+    filter: brightness(70%); /* Darkens image for better text readability */
+  }
+  
+  .overlayTitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    opacity: 0; /* Start invisible */
+  }
+
+  .overlayTitle.animate {
+    animation: slideUp 0.8s ease-in-out 1s forwards;
+  }
+  
+  
+  .overlayAdjust span {
+    font-family: 'Alex Brush';
+    font-size: 6.5em;
+    font-weight: 400;
+    display: block;
+  }
+  
+  .overlayAdjust h1 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+  }
+  
+  .overlayAdjust button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #916c34;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .overlayAdjust button:hover {
+    background-color: #a2783a;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, 20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+    }
+  }

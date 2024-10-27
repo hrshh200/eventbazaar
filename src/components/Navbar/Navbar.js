@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 
-const Navbar = ({scrollToServices,scrollTofeatures}) => {
+const Navbar = ({scrollToServices,scrollTofeatures,scrollToStayConnected}) => {
     return (
         <div className='container'>
             <div className='headingDisplay'>
@@ -16,7 +16,7 @@ const Navbar = ({scrollToServices,scrollTofeatures}) => {
                     <li>LOGIN</li>
                     <button onClick={scrollToServices}><li>SERVICES</li></button>
                     <button onClick={scrollTofeatures}><li>FEATURES</li></button>
-                    <li>BLOG</li>
+                    <button onClick={scrollToStayConnected}><li>BLOG</li></button>
                     <li>SHOP</li>
                     <li>RSVP</li>
                 </ul>

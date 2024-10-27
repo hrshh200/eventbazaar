@@ -1,0 +1,42 @@
+.copyContainer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #ffffff;
+    box-shadow: 2px 0px 10px 0px #00000040;
+}
+
+.innerCopy{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+.innerCopy span{
+    color: #666666;
+    font: 'Hind', sans-serif;
+    padding: 0;
+    font-size: 14px;
+}
+
+.listfooter {
+    display: flex;
+    flex-direction: column;
+}
+
+.listfooter ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    list-style-type: none;
+}
+
+
+.listfooter li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #f05f79;
+    cursor: pointer;
+}

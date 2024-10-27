@@ -3,11 +3,13 @@ import "./Home.css";
 import Slidesbar from './Slides';
 import FeaturedEventCarousel from './FeaturedEventCarousel';
 import Navbar from '../Navbar/Navbar';
+import ConnectBanner from './ConnectBanner';
 
 const Home = () => {
 
     const servicesRef = useRef(null);
     const FeaturedEventsRef = useRef(null);
+    const StayConnectedRef = useRef(null);
 
     const scrollToServices = () => {
         if (servicesRef.current) {
@@ -21,9 +23,15 @@ const Home = () => {
         }
     };
 
+    const scrollToStayConnected = () => {
+        if (StayConnectedRef.current) {
+            StayConnectedRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <div>
-            <Navbar scrollToServices={scrollToServices} scrollTofeatures={scrollTofeatures}/>
+            <Navbar scrollToServices={scrollToServices} scrollTofeatures={scrollTofeatures} scrollToStayConnected={scrollToStayConnected}/>
             <Slidesbar />
             <div className='events' ref={servicesRef}>
                 <span>Making Your Event Unforgettable</span>
@@ -91,6 +99,7 @@ const Home = () => {
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p> */}
             </div>
             <FeaturedEventCarousel />
+            <div ref={StayConnectedRef}><ConnectBanner /></div>
         </div>
     )
 }

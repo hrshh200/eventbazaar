@@ -12,6 +12,7 @@
   
   .carousel .carousel-card {
     padding: 1em;
+    cursor: pointer;
   }
   
   .carousel .carousel-card img {

@@ -21,19 +21,19 @@ const FeaturedEventCarousel = () => {
                 dynamicHeight={false}
             >
                 <div className="carousel-card">
-                    <img src="Marriage.jpg" alt="Event 1" />
+                    <img src="c4.jpg" alt="Event 1" />
                     {/* <p className="legend">Event 1</p> */}
                 </div>
                 <div className="carousel-card">
-                    <img src="Marriage.jpg" alt="Event 2" />
+                    <img src="c1.jpg" alt="Event 2" />
                     {/* <p className="legend">Event 2</p> */}
                 </div>
                 <div className="carousel-card">
-                    <img src="Marriage.jpg" alt="Event 3" />
+                    <img src="c2.jpg" alt="Event 3" />
                     {/* <p className="legend">Event 3</p> */}
                 </div>
                 <div className="carousel-card">
-                    <img src="Marriage.jpg" alt="Event 4" />
+                    <img src="c3.jpg" alt="Event 4" />
                     {/* <p className="legend">Event 4</p> */}
                 </div>
             </Carousel>

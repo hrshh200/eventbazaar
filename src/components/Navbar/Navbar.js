@@ -18,7 +18,7 @@ const Navbar = ({scrollToServices,scrollTofeatures,scrollToStayConnected}) => {
                     <button onClick={scrollTofeatures}><li>FEATURES</li></button>
                     <button onClick={scrollToStayConnected}><li>BLOG</li></button>
                     <li>SHOP</li>
-                    <li>RSVP</li>
+                    <li>CONTACT US</li>
                 </ul>
             </div>
         </div>

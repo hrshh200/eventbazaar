@@ -4,18 +4,26 @@ import Slidesbar from './Slides';
 import FeaturedEventCarousel from './FeaturedEventCarousel';
 import Navbar from '../Navbar/Navbar';
 import ConnectBanner from './ConnectBanner';
+import Footer from '../Footer/Footer'
 
 const Home = () => {
 
     const servicesRef = useRef(null);
-    const FeaturedEventsRef = useRef(null);
+    const FeaturedEventsRef = useRef(null); 
     const StayConnectedRef = useRef(null);
+    const footerRef = useRef(null);
 
     const scrollToServices = () => {
         if (servicesRef.current) {
             servicesRef.current.scrollIntoView({ behavior: 'smooth' });
         }
     };
+
+    const scrollIntoFooter = () =>{
+        if(footerRef.current){
+            footerRef.current.scrollIntoView({behavior: 'smooth'});
+        }
+    }
 
     const scrollTofeatures = () => {
         if (FeaturedEventsRef.current) {
@@ -31,7 +39,7 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar scrollToServices={scrollToServices} scrollTofeatures={scrollTofeatures} scrollToStayConnected={scrollToStayConnected}/>
+            <Navbar scrollToServices={scrollToServices} scrollTofeatures={scrollTofeatures} scrollToStayConnected={scrollToStayConnected} scrollIntoFooter={scrollIntoFooter}/>
             <Slidesbar />
             <div className='events' ref={servicesRef}>
                 <span>Making Your Event Unforgettable</span>
@@ -100,6 +108,7 @@ const Home = () => {
             </div>
             <FeaturedEventCarousel />
             <div ref={StayConnectedRef}><ConnectBanner /></div>
+            <div ref={footerRef}><Footer /></div>
         </div>
     )
 }

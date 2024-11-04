@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 
-const Navbar = ({ scrollToServices, scrollTofeatures, scrollToStayConnected, scrollIntoFooter }) => {
+const Navbar = ({ scrollToServices, scrollTofeatures, scrollToStayConnected, scrollIntoFooter}) => {
     return (
         <div className='container'>
             <div className='headingDisplay'>

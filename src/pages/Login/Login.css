@@ -1,159 +1,105 @@
-.login-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-  }
-  
-  .login-left, .login-right {
-    width: 50%;
-    padding: 40px;
-  }
-  
-  .login-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  .login-header h1 {
-    color: #1f4af1;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  h2 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-  }
-  
-  .social-login-buttons {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .social-button {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 48%;
-    cursor: pointer;
-  }
-  
-  .google-button {
-    background: #fff;
-  }
-  
-  .facebook-button {
-    background: #3b5998;
-    color: #fff;
-  }
-  
-  .divider {
-    text-align: center;
-    color: #888;
-    margin: 20px 0;
-  }
-  
-  .login-form .input-group {
-    margin-bottom: 15px;
-  }
-  
-  .login-form input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .options {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .options label {
-    display: flex;
-    align-items: center;
-  }
-  
-  .forgot-password {
-    color: #1f4af1;
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  
-  .login-button {
-    background: #1f4af1;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-    margin-top: 10px;
-  }
-  
-  .signup-prompt {
-    text-align: center;
-    margin-top: 15px;
-  }
-  
-  .signup-prompt a {
-    color: #1f4af1;
-    text-decoration: none;
-  }
-  
-  .login-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #1f4af1;
-    color: #fff;
-    flex-direction: column;
-    text-align: center;
-    border-radius: 0 8px 8px 0;
-  }
-  
-  .info-section h3 {
-    font-size: 1.25rem;
-    margin-top: 20px;
-  }
-  
-  .info-section p {
-    color: #d4e2ff;
-  }
-  
-  .circle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    position: relative;
-  }
-  
-  .app-icon {
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    color: #1f4af1;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.75rem;
-    margin: 5px;
-    position: absolute;
-  }
-  
-  .app-icon:nth-child(1) { top: 20px; left: 50%; transform: translateX(-50%); }
-  .app-icon:nth-child(2) { bottom: 20px; left: 20px; }
-  .app-icon:nth-child(3) { bottom: 20px; right: 20px; }
-  
+.signup-container {
+  display: flex;
+  width: 100%;
+  height: 700px;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.signup-image {
+  width: 50%;
+  background-image: url('https://img.freepik.com/free-photo/top-view-wedding-planning-resources-arrangement_23-2150279497.jpg?t=st=1730702923~exp=1730706523~hmac=9b7b6c2b52ab9fe6705219f8783b9bee2a3a2378fccf53847412fd2daaf82aad&w=996');
+  /* Replace with your desired image URL */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+/* .signup-image p{
+  background:none;
+} */
+
+.image-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark overlay */
+}
+
+.signup-form {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.signup-form h2 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.75rem;
+}
+
+.signup-form p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.signup-form img {
+  width: 20px;
+  height: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #A2783A;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+  background-color: #000000;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+  color: #666;
+}
+
+.login-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+.homeDisplay {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25em;
+  align-items: center;
+}

@@ -43,8 +43,21 @@
     cursor: pointer;
 }
 
-.acceptdeclineButtons{
+.acceptdeclineButtons {
     display: flex;
     flex-direction: row;
-    gap:1em;
+    gap: 1em;
+}
+
+.acceptdeclineButtons button{
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.acceptdeclineButtons button:hover{
+    background-color: #fff;
+    color: #000000;
 }

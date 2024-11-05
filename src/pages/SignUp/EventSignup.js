@@ -42,6 +42,10 @@ const EventSignupForm = () => {
 
                     <form>
                         <div className="form-group">
+                            <input type="text" placeholder="Event Name" required />
+                        </div>
+
+                        <div className="form-group">
                             <input type="text" placeholder="Full Name" required />
                         </div>
 

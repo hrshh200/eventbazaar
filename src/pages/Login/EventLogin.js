@@ -1,9 +1,9 @@
 import React from 'react';
-import './Login.css';
+import './EventLogin.css';
 import Navbar from '../../components/Navbar/Navbar';
 import { NavLink } from 'react-router-dom';
 
-const LoginForm = () => {
+const EventLoginForm = () => {
 
   //   const signupRef = useRef(null);
 
@@ -23,10 +23,10 @@ const LoginForm = () => {
 
         <div className="signup-form">
           <NavLink to="/"><div className='homeDisplay'>
-            <img src='leftarrow.svg' alt='leftarrow'/>
+            <img src='leftarrow.svg' />
             <p>Back to home</p>
           </div></NavLink>
-          <h2>User Login to your account</h2>
+          <h2>Event Planner Login to your account</h2>
           <p>Login to access all features!</p>
 
           <form>
@@ -51,4 +51,4 @@ const LoginForm = () => {
   );
 }
 
-export default LoginForm;
+export default EventLoginForm;

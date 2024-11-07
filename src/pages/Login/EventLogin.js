@@ -23,7 +23,7 @@ const EventLoginForm = () => {
 
         <div className="signup-form">
           <NavLink to="/"><div className='homeDisplay'>
-            <img src='leftarrow.svg' />
+            <img src='left-arrow.png' alt='leftarrow'/>
             <p>Back to home</p>
           </div></NavLink>
           <h2>Event Planner Login to your account</h2>

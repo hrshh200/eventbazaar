@@ -22,22 +22,23 @@ const EventLoginTC = ({ show, onClose, title }) => {
                     &times;
                 </button>
                 <div className="modal-content">
-                    <p>
-                        Welcome to our application. By accessing or using our service, you agree to be bound by the terms and conditions outlined here.
-                        Please read them carefully before proceeding.
-                    </p>
-                    <p>
-                        <strong>1. Usage Rules:</strong> You agree not to misuse our services. This includes unauthorized attempts to access our systems
-                        or interfere with the proper working of our platform.
-                    </p>
-                    <p>
-                        <strong>2. Privacy Policy:</strong> Your privacy is important to us. Please review our Privacy Policy for information on how we
-                        collect, use, and protect your data.
-                    </p>
-                    <p>
-                        <strong>3. Disclaimer:</strong> Our service is provided "as is" without warranties of any kind. We do not guarantee uninterrupted
-                        or error-free service.
-                    </p>
+                <p>
+    Welcome to our Event Planner platform. By signing up or using our service, you agree to adhere to the terms and conditions outlined below. 
+    Please read them carefully before proceeding.
+</p>
+<p>
+    <strong>1. Verification:</strong> By signing up, you agree to undergo a verification process conducted by our admin team. Only after successful verification will you be granted access to the platform.
+</p>
+<p>
+    <strong>2. Personal Information:</strong> To use our platform for selling or listing items, you must provide your complete address and accurate personal information. This information is necessary to ensure transparency and compliance with our policies.
+</p>
+<p>
+    <strong>3. Brokerage Policies:</strong> By using our platform, you acknowledge and agree to the brokerage policies outlined. This includes any fees, commissions, or charges applicable for transactions conducted through our platform. Please review these policies carefully before proceeding.
+</p>
+<p>
+    If you have any questions or concerns about these terms, feel free to contact our support team for clarification.
+</p>
+
                 </div>
                 <div className='acceptdeclineButtons'>
                     <button onClick={onClose}>Ok, I Accept</button>

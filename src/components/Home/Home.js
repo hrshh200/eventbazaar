@@ -5,6 +5,7 @@ import FeaturedEventCarousel from './FeaturedEventCarousel';
 import Navbar from '../Navbar/Navbar';
 import ConnectBanner from './ConnectBanner';
 import Footer from '../Footer/Footer'
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
 
@@ -12,6 +13,7 @@ const Home = () => {
     const FeaturedEventsRef = useRef(null); 
     const StayConnectedRef = useRef(null);
     const footerRef = useRef(null);
+    const navigate = useNavigate();
 
     const scrollToServices = () => {
         if (servicesRef.current) {
@@ -37,6 +39,22 @@ const Home = () => {
         }
     };
 
+    const handleWeddingsCards = () =>{
+        console.log("Wedding cards clicked");
+        navigate('/weddingevents')
+    }
+
+    const handleSocialCards = () =>{
+        console.log("Wedding cards clicked");
+        navigate('/socialevents')
+    }
+
+    const handleCorporateCards = () =>{
+        console.log("Wedding cards clicked");
+        navigate('/corporateevents')
+    }
+
+
     return (
         <div>
             <Navbar scrollToServices={scrollToServices} scrollTofeatures={scrollTofeatures} scrollToStayConnected={scrollToStayConnected} scrollIntoFooter={scrollIntoFooter}/>
@@ -50,7 +68,7 @@ const Home = () => {
                 <div className="cardsContainer">
                     <div className="card">
                         {/* <!-- Front Side Content --> */}
-                        <div className="cardFront">
+                        <div className="cardFront" onClick={handleWeddingsCards}>
                             <img src="wedding.svg" alt="Weddings" />
                             <span>Weddings</span>
                             <p>Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis.</p>
@@ -58,7 +76,7 @@ const Home = () => {
                         </div>
 
                         {/* <!-- Back Side Content --> */}
-                        <div className="cardBackWedding">
+                        <div className="cardBackWedding" onClick={handleWeddingsCards}>
                             <img src="weddingback.svg" alt="Weddings" />
                             <span>Weddings</span>
                         </div>
@@ -68,15 +86,15 @@ const Home = () => {
                 <div className="cardsContainer">
                     <div className="card">
                         {/* <!-- Front Side Content --> */}
-                        <div className="cardFront">
-                            <img src="cooperate.svg" alt="Weddings" />
+                        <div className="cardFront"  onClick={handleCorporateCards}>
+                            <img src="cooperate.svg" alt="Cooperate" />
                             <span>Corporate</span>
                             <p>Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis.</p>
                             <p className="morelink">VIEW MORE</p>
                         </div>
 
                         {/* <!-- Back Side Content --> */}
-                        <div className="cardBackCooperate">
+                        <div className="cardBackCooperate" onClick={handleCorporateCards}>
                             <img src="cooperateback.svg" alt="Cooperate" />
                             <span>Corporate</span>
                         </div>
@@ -86,7 +104,7 @@ const Home = () => {
                 <div className="cardsContainer">
                     <div className="card">
                         {/* <!-- Front Side Content --> */}
-                        <div className="cardFront">
+                        <div className="cardFront" onClick={handleSocialCards}>
                             <img src="social.svg" alt="Weddings" />
                             <span>Social</span>
                             <p>Vestibulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod consequat ante. Lorem ipsum dolor sit amet, consectetuer adipis.</p>
@@ -94,7 +112,7 @@ const Home = () => {
                         </div>
 
                         {/* <!-- Back Side Content --> */}
-                        <div className="cardBackSocial">
+                        <div className="cardBackSocial" onClick={handleSocialCards}>
                             <img src="socialback.svg" alt="Social" />
                             <span>Social</span>
                         </div>
